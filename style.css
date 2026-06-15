@@ -1,0 +1,70 @@
+body {
+
+background:#050505;
+color:#d6d6d6;
+
+font-family:
+"Courier New",
+monospace;
+
+padding:40px;
+
+}
+
+
+.terminal {
+
+border:1px solid #555;
+
+padding:30px;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+
+h1 {
+
+letter-spacing:5px;
+
+}
+
+
+.danger {
+
+color:#ff3333;
+
+}
+
+
+button {
+
+background:#111;
+
+color:white;
+
+border:1px solid #777;
+
+padding:12px;
+
+cursor:pointer;
+
+}
+
+
+.hidden {
+
+display:none;
+
+}
+
+
+#file {
+
+margin-top:20px;
+
+line-height:1.6;
+
+}
