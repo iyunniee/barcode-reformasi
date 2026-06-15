@@ -1,50 +1,53 @@
+function deniedAccess(){
+
+
+let warning=document.getElementById("warning");
+
+
+warning.style.display="flex";
+
+
 setTimeout(()=>{
 
 
-document.getElementById("loading").innerHTML =
-"ACCESS GRANTED";
+warning.style.display="none";
 
 
-document.getElementById("content")
-.classList.remove("hidden");
+},3000);
 
 
-},2000);
+}
+
 
 
 
 function openFile(){
 
 
-document.getElementById("file").innerHTML = `
+let file=document.getElementById("fileWindow");
 
 
-<br>
+file.style.display="block";
 
 
-======== FILE OPENED ========
+setTimeout(()=>{
 
 
-<br><br>
+file.style.display="none";
 
 
-ARSIP 1998 | DOC.01
+},8000);
 
 
-<br><br>
+
+}
 
 
-"Jika dokumen ini terbuka,
-maka seseorang telah mati."
+
+function closeFile(){
 
 
-<br><br>
+document.getElementById("fileWindow").style.display="none";
 
-
-STATUS:
-TERENKRIPSI
-
-
-`;
 
 }

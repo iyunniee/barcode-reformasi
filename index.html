@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-<title>Nusantara Archive</title>
-
+<meta charset="UTF-8">
+<title>Nusantara Archive System</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
-
-<div class="terminal">
-
-
-<h1>NUSANTARA ARCHIVE SYSTEM</h1>
-
-
-<p id="loading">
-INITIALIZING...
-</p>
-
-
-<div id="content" class="hidden">
-
+<div class="archive">
 
 <h2>CASE: BARCODE REFORMASI</h2>
 
+<p>Arsip 1998_Peristiwa XX | Doc.01</p>
 
-<p>
+<div class="status">
 STATUS:
-<span class="danger">
-RESTRICTED
-</span>
-</p>
-
+<span>TERENKRIPSI</span>
+</div>
 
 <hr>
-
 
 <h3>AVAILABLE FILE</h3>
 
 
-<button onclick="openFile()">
-ACCESS DOC.01
+<button onclick="deniedAccess()">
+Arsip 1998_Peristiwa XX | Doc.01
 </button>
 
 
-<div id="file"></div>
+<button onclick="openFile()">
+01.txt
+</button>
 
+
+<div id="warning">
+
+<div>
+<h1>ACCESS :</h1>
+
+<h2>DITOLAK</h2>
+
+<p>FILE TERKUNCI</p>
+
+</div>
+
+</div>
+
+
+
+<div id="fileWindow">
+
+<h2>01.txt</h2>
+
+<p>
+Jika barcode ini diakses,
+maka seseorang telah mati.
+</p>
+
+<button onclick="closeFile()">
+CLOSE FILE
+</button>
+
+</div>
+
+
+
+<div class="barcode">
+
+CODE SUBJECT:
+
+<br>
+
+011310202698
 
 </div>
 
 
 </div>
-
 
 
 <script src="script.js"></script>
 
-
 </body>
-
 </html>
