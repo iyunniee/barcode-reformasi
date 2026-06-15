@@ -51,3 +51,17 @@ document.getElementById("fileWindow").style.display="none";
 
 
 }
+
+window.onload=function(){
+
+
+setTimeout(()=>{
+
+
+document.getElementById("loading").style.display="none";
+
+
+},4000);
+
+
+}
